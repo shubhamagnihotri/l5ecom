@@ -18,7 +18,7 @@
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-      
+          <form method="POST" action="{{ route('admin.category.store') }}">
             <div class="container-fluid">
                <label><strong>Caegroy Create</strong></label>
               <div class="form-group ">
@@ -47,6 +47,7 @@
               </div>
               
             </div>
+        </form>
     </main>
   </div>
 </div>
