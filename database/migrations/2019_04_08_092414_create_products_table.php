@@ -22,6 +22,7 @@ class CreateProductsTable extends Migration
             $table->string('discount_price');
             $table->string('thumbnail');
             $table->text('options');
+            $table->unsignedInteger('category_id');
             $table->timestamps();
             $table->softDeletes();
         });

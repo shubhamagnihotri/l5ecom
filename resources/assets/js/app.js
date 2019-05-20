@@ -8,7 +8,8 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-
+window.select2 = require('select2');
+window.ClassicEditor = require('@ckeditor/ckeditor5-build-classic')		
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
