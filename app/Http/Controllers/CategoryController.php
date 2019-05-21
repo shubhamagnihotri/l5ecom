@@ -28,7 +28,6 @@ class CategoryController extends Controller
     {
         //
         $categories = Category::all();
-        
         return view('admin.category.create',compact('categories'));
     }
 
@@ -41,8 +40,11 @@ class CategoryController extends Controller
     public function store(Request $request)
     {
         //
-        echo "dfb kjsdfbj";
-        die();
+        $request->validate([
+            'title'=>'required|min:5',
+            'slug'=>'required|min:5'
+        ]);
+     $categories = Category::create($request->only('title','description','slug'));
     }
 
     /**
